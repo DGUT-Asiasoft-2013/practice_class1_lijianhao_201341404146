@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#1F5880">
+    
+    
+
+    
+  
+    
+    <fragment 
+    android:id="@+id/input_account"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    class="com.example.fragment.SimpleTextInputCellFragment"
+    tools:layout="@layout/fragment_inputcell_simpletext"/>
+    
+     <fragment 
+    android:id="@+id/input_password"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    class="com.example.fragment.SimpleTextInputCellFragment"
+    tools:layout="@layout/fragment_inputcell_simpletext"/>
+     
+     
+      <fragment 
+    android:id="@+id/input_repeat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    class="com.example.fragment.SimpleTextInputCellFragment"
+    tools:layout="@layout/fragment_inputcell_simpletext"/>
+      
+      
+      <Button 
+    android:id="@+id/btn_submit"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="SUBMIT"/>
+     
+     
+    
+    
+        
+  
+</LinearLayout>
+      
+    
