@@ -1,4 +1,4 @@
-package com.example.fragment;
+package com.example.helloworld.fragments;
 
 import com.example.helloworld.R;
 
@@ -8,14 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class ForGotPasswordFargment2 extends Fragment {
+public class PasswordRecoverStep2Fragment extends Fragment {
 	View view;
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		
 		if(view==null){
-			view = inflater.inflate(R.layout.activity_forgot_password2, null);
+			view = inflater.inflate(R.layout.fragment_password_recover_step2, null);
 		}
 		
 		return view;

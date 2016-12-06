@@ -1,5 +1,4 @@
 /gen/
 /bin/
-/project.properties
 /proguard-project.txt
-/lint.xml
+/project.properties

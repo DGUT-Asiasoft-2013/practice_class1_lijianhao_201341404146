@@ -1,14 +1,15 @@
-package com.example.fragment;
+package com.example.helloworld.fragments;
 
 import com.example.helloworld.R;
-import com.example.fragment.SimpleTextInputCellFragment;
+import com.example.helloworld.fragments.inputcells.SimpleTextInputCellFragment;
+
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class ForGotPasswordFargment extends Fragment {
+public class PasswordRecoverStep1Fragment extends Fragment {
 	SimpleTextInputCellFragment fragEmail;
 	View view;
 	
@@ -16,7 +17,7 @@ public class ForGotPasswordFargment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		
 		if(view==null){
-			view = inflater.inflate(R.layout.activity_forgot_password1, null);
+			view = inflater.inflate(R.layout.fragment_password_recover_step1, null);
 			
 			fragEmail = (SimpleTextInputCellFragment) getFragmentManager().findFragmentById(R.id.input_email);
 			
@@ -36,8 +37,8 @@ public class ForGotPasswordFargment extends Fragment {
 	public void onResume() {
 		super.onResume();
 		
-		fragEmail.setLabelText("” œ‰");
-		fragEmail.setHintText(" ‰»Î” œ‰");
+		fragEmail.setLabelText("◊¢≤·” œ‰");
+		fragEmail.setHintText(" ‰»Î◊¢≤·” œ‰µÿ÷∑");
 	}
 	
 	public static interface OnGoNextListener{
