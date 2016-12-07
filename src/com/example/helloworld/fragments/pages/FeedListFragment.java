@@ -45,7 +45,7 @@ public class FeedListFragment extends Fragment {
 			}
 			
 			TextView text1 = (TextView) view.findViewById(android.R.id.text1);
-			text1.setText("THIS IS ROW "+position);
+			text1.setText("This is row "+position);
 			
 			return view;
 		}
