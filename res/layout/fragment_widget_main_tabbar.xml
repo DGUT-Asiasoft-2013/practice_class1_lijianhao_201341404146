@@ -4,8 +4,8 @@
     android:layout_height="60dp"
     android:background="@android:color/holo_green_dark"
     android:orientation="horizontal" >
-    
-   <LinearLayout
+
+    <LinearLayout
         android:id="@+id/tab_feeds"
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -98,7 +98,6 @@
             android:layout_height="wrap_content"
             android:text="Me"
             android:textColor="@android:color/white" />
-</LinearLayout> 
-   
+    </LinearLayout>
 
 </LinearLayout>
