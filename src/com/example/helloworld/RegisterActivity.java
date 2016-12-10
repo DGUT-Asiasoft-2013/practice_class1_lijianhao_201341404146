@@ -46,7 +46,7 @@ public class RegisterActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				submit();
-			}
+			}  
 		});
 	}
 
