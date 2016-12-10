@@ -88,7 +88,7 @@ public class RegisterActivity extends Activity {
 			.setMessage("重复密码不一致")
 			.setIcon(android.R.drawable.ic_dialog_alert)
 			.setNegativeButton("好", null)
-			.show();
+			.show();  
 
 			return;
 		}
