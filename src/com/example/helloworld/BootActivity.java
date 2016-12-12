@@ -30,7 +30,7 @@ public class BootActivity extends Activity {
 	@Override
 	protected void onResume() {
 		super.onResume();
-		
+//		
 //		Handler handler = new Handler();
 //		handler.postDelayed(new Runnable() {
 //			private int abcd = 0;
