@@ -2,6 +2,7 @@ package com.example.helloworld;
 
 import java.io.IOException;
 
+import com.example.helloworld.api.Server;
 import com.example.helloworld.fragments.inputcells.PictureInputCellFragment;
 import com.example.helloworld.fragments.inputcells.SimpleTextInputCellFragment;
 
@@ -46,7 +47,7 @@ public class RegisterActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				submit();
-			}  
+			}
 		});
 	}
 
@@ -88,7 +89,7 @@ public class RegisterActivity extends Activity {
 			.setMessage("重复密码不一致")
 			.setIcon(android.R.drawable.ic_dialog_alert)
 			.setNegativeButton("好", null)
-			.show();  
+			.show();
 
 			return;
 		}
@@ -99,7 +100,7 @@ public class RegisterActivity extends Activity {
 		String name = fragInputName.getText();
 		String email = fragInputEmailAddress.getText();
 
-		OkHttpClient client = new OkHttpClient.Builder().build();
+		OkHttpClient client = Server.getSharedClient();
 
 		MultipartBody.Builder requestBodyBuilder = new MultipartBody.Builder()
 				.setType(MultipartBody.FORM)
@@ -118,8 +119,7 @@ public class RegisterActivity extends Activity {
 							fragInputAvatar.getPngData()));
 		}
 
-		Request request = new Request.Builder()
-				.url("http://172.27.0.41:8080/membercenter/api/register")
+		Request request = Server.requestBuilderWithApi("register")
 				.method("post", null)
 				.post(requestBodyBuilder.build())
 				.build();

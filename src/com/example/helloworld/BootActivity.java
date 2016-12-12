@@ -2,6 +2,8 @@ package com.example.helloworld;
 
 import java.io.IOException;
 
+import com.example.helloworld.api.Server;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,7 +30,7 @@ public class BootActivity extends Activity {
 	@Override
 	protected void onResume() {
 		super.onResume();
-//		
+		
 //		Handler handler = new Handler();
 //		handler.postDelayed(new Runnable() {
 //			private int abcd = 0;
@@ -38,10 +40,9 @@ public class BootActivity extends Activity {
 //			}
 //		}, 1000);
 		
-		OkHttpClient client = new OkHttpClient();
+		OkHttpClient client = Server.getSharedClient();
 		
-		Request request = new Request.Builder()
-				.url("http://172.27.0.56:8080/membercenter/api/hello")
+		Request request = Server.requestBuilderWithApi("hello")
 				.method("GET", null)
 				.build();
 		
