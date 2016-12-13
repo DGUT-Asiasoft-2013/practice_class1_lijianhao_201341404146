@@ -89,7 +89,7 @@ public class MyProfileFragment extends Fragment {
 		avatar.load(user);
 		textView.setVisibility(View.VISIBLE);
 		textView.setTextColor(Color.BLACK);
-		textView.setText("Hello,"+user.getName());
+		textView.setText("RuaRuaRua!"+user.getName());
 	}
 
 	void onFailuer(Call call, Exception ex){
