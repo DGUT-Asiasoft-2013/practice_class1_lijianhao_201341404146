@@ -95,7 +95,7 @@ public class LoginActivity extends Activity {
 		final ProgressDialog dlg = new ProgressDialog(this);
 		dlg.setCancelable(false);
 		dlg.setCanceledOnTouchOutside(false);
-		dlg.setMessage("登陆中");
+		dlg.setMessage("正在登陆");
 		dlg.show();
 
 		client.newCall(request).enqueue(new Callback() {
@@ -111,9 +111,9 @@ public class LoginActivity extends Activity {
 					public void run() {
 						dlg.dismiss();
 						new AlertDialog.Builder(LoginActivity.this)
-						.setMessage("RUA!"+user.getName())
+						.setMessage("Hello,"+user.getName())
 //						.setMessage(responseString)
-						.setPositiveButton("噢科噢科", new DialogInterface.OnClickListener(){
+						.setPositiveButton("OK", new DialogInterface.OnClickListener(){
 							@Override
 							public void onClick(DialogInterface dialog, int which) {
 								Intent itnt = new Intent(LoginActivity.this, HelloWorldActivity.class);

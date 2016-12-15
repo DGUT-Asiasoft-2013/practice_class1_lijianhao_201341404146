@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:padding="16dp"
-        android:text="老哥  稳！"
+        android:text="LOGIN TO HELLO"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -57,6 +57,4 @@
             android:text="登陆" />
     </LinearLayout>
 
-    
-    
 </LinearLayout>
